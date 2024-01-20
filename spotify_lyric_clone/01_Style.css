@@ -1,0 +1,34 @@
+/*PHONE(Default) stylesheet__________________________*/
+@media only screen and (min-width: 1px){
+
+	*{
+		font-family: Courier, arial;
+		color: rgba(255,255,255,255);
+		font-size: 3;
+	}
+	body{
+		background-color: rgba(0,0,0,255);
+	}
+	header{
+		padding: 10vh 10VW 10px 10vw;   /* N E S W */
+	}
+	main{
+		padding: 10px 30vw 10px 10vw;   /* N E S W */
+	}
+	.box_pink{
+		background-color: rgba(190, 80, 100, 255);
+		padding: 10px 10px 10px 30px;   /* N E S W */
+		border-radius: 15px;
+	}
+	.box_pink p{
+		color: rgba(255,255,255,255);
+		padding: 10px 0 0 0;
+		font-family: Courier, arial; 
+		/* just so that theres no error */
+	}
+}
+
+/*PC stylesheet______________________________________*/
+@media only screen and (min-width: 1000px){
+
+}
