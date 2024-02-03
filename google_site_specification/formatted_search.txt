@@ -1,0 +1,1 @@
+bad omens -site:tiktok.com -site:facebook.com -site:youtube.com -site:apple.com -site:reddit.com -site:pinterest.com -site:vimeo.com -site:revolvermag.com 
