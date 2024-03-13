@@ -12,8 +12,7 @@ from time import sleep
 # ========================================================================
 def question(row: int, data_frame: pd.core.frame.DataFrame):
 
-	
-	choices_num = 5
+	choices_num = 2
 
 	# ========================================================================
 	# gets random other choices for the multiple choice
@@ -64,6 +63,8 @@ def main():
 	file_name = "UN_countries"
 	countries = pd.read_csv(rf".\REFERENCES\{file_name}.csv")
 
+	
+
 	# ========================================================================
 	# WAS FOR TESTING PURPOSES
 	# print(countries.describe())
@@ -74,8 +75,31 @@ def main():
 	# print(f"{type(1)}, {type(countries)}")
 	# ========================================================================
 
+
+
+	# ========================================================================
+	# OPTIONAL CODE TO MIX IT UP
+	
+	# flips capitals and countries
+	# then sorts by capitals
+	# countries = countries.iloc[:, [1, 0] + list(range(2, len(countries.columns)))]
+	# countries = countries.sort_values(by="CAPITALS", ascending=True)
+
+	# starts from z
+	# countries = countries.sort_values(by="COUNTRIES", ascending=False)
+
+	# filters for srtating letters of countries
+	countries = countries[countries['COUNTRIES'].str.startswith('B')]
+	# ========================================================================
+	
+	
 	list_indexes = list(range(0,len(countries.index)))
+
+	# ========================================================================
+	# shuffles the list
 	# ra.shuffle(list_indexes)
+	# ========================================================================
+
 
 	for i in list_indexes:
 		section(f"QUESTION {i}")
