@@ -38,17 +38,18 @@ def question(row: int, data_frame: pd.core.frame.DataFrame):
 	
 	# ========================================================================
 	# answer checking
+	ret = 0
 	try:
 		answer = int(input("answer the number of the correct answer: "))
 		if(answer == choice_index):
 			print("\nYAY, YOU GOT IT RIGHT")
+			ret = 1
 		else:
 			print(f"\nu got it wrong \nthe correct answer was {choice_index}, {data_frame.iloc[choices_list[choice_index], 1]}")
 	except Exception as error:
 		print("An exception occurred:", error)
 	
-	# ========================================================================
-	sleep(1)
+	return ret
 
 
 # ========================================================================
@@ -63,10 +64,8 @@ def main():
 	file_name = "UN_countries"
 	countries = pd.read_csv(rf".\REFERENCES\{file_name}.csv")
 
-	
-
 	# ========================================================================
-	# WAS FOR TESTING PURPOSES
+	# FOR TESTING PURPOSES
 	# print(countries.describe())
 	# section("AFTER DESCRIBE")
 	# print(countries)
@@ -74,8 +73,6 @@ def main():
 	# print(f"number of items {len(countries.index)}")
 	# print(f"{type(1)}, {type(countries)}")
 	# ========================================================================
-
-
 
 	# ========================================================================
 	# OPTIONAL CODE TO MIX IT UP
@@ -89,9 +86,8 @@ def main():
 	# countries = countries.sort_values(by="COUNTRIES", ascending=False)
 
 	# filters for srtating letters of countries
-	countries = countries[countries['COUNTRIES'].str.startswith('B')]
+	countries = countries[countries['COUNTRIES'].str.startswith('U')]
 	# ========================================================================
-	
 	
 	list_indexes = list(range(0,len(countries.index)))
 
@@ -99,12 +95,14 @@ def main():
 	# shuffles the list
 	# ra.shuffle(list_indexes)
 	# ========================================================================
-
+	score = 0
 
 	for i in list_indexes:
 		section(f"QUESTION {i}")
-		question(i, countries)
-
+		score += question(i, countries)
+		sleep(1)
+	
+	print(f"YOU GOT {score}\nOUT OF {len(list_indexes)}")
 
 # ========================================================================
 # MISC FUNCTIONS
