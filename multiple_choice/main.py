@@ -93,7 +93,7 @@ def main():
 
 	# ========================================================================
 	# shuffles the list
-	# ra.shuffle(list_indexes)
+	ra.shuffle(list_indexes)
 	# ========================================================================
 	score = 0
 
@@ -102,7 +102,7 @@ def main():
 		score += question(i, countries)
 		sleep(1)
 	
-	print(f"YOU GOT {score}\nOUT OF {len(list_indexes)}")
+	print(f"\n\nYOU GOT {score}\n\nOUT OF {len(list_indexes)}")
 
 # ========================================================================
 # MISC FUNCTIONS

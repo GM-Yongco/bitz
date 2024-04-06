@@ -1,0 +1,7 @@
+W + Y + XZ + W'X'Z'
+W + W'X' + Y'Z' + YZ
+W + X + W'X'Y' + W'X'Z
+W + YZ' + W'X'Z' + W'X'Y + XY'Z
+X'Y'Z' + YZ'
+W + Y'Z' + XY' + XZ'
+W + YZ' + W'X'Y + XY'
