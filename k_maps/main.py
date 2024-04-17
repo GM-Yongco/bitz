@@ -72,7 +72,7 @@ def create_csv_k_map_(file_path: str = "./REFERENCES/test.csv") -> None:
 		if smol_table_length > 2:
 			smol_table["_2_"], smol_table["_3_"] = smol_table["_3_"], smol_table["_2_"]
 		if smol_table_height > 2:
-			smol_table[3], smol_table[2] = smol_table[2], smol_table[3]
+			smol_table.iloc[2], smol_table.iloc[3] = smol_table.iloc[3].copy(), smol_table.iloc[2].copy()
 		if smol_table_length > 4:
 			smol_table["_4_"], smol_table["_7_"] = smol_table["_7_"], smol_table["_4_"]
 			smol_table["_5_"], smol_table["_6_"] = smol_table["_6_"], smol_table["_5_"]
@@ -81,21 +81,44 @@ def create_csv_k_map_(file_path: str = "./REFERENCES/test.csv") -> None:
 
 # ========================================================================
 
-def display_kmap() -> None:
-	data = pd.read_csv("./REFERENCES/output_1.csv")
+def display_kmap(file_path: str = "./REFERENCES/test.csv") -> None:
+	big_table = pd.read_csv(file_path)
+	table_outputs = int(big_table.columns[-1].lstrip("output_"))
 
-	fig, ax = plt.subplots()
-	table = ax.table(cellText=data.values, colLabels=data.columns, loc='center')
+	output = open("./OUTPUT/output.html", 'w')
+	template_1 = open("./REFERENCES/template_1.html", 'r')
+	output.write(template_1.read())
+	template_1.close
 
-	plt.show()
+	for i in range(1, table_outputs + 1):
+		smol_table = pd.read_csv(f"./REFERENCES/output_{i}.csv")
+		num_col = smol_table.shape[1]
+		num_row = smol_table.shape[0]
+		
+		output.write(f"\n<h1>output_{i}</h1>")
+
+		output.write("\n<table><tbody>")
+		for r in range(0, num_row):
+			output.write("\n<tr>")
+			for c in range(0, num_col):
+				output.write("<td>")
+				output.write(str(smol_table.iloc[r, c]))
+				output.write("</td>")
+			output.write("\n</tr>")
+		output.write("\n</tbody>\n</table>")
+
+	template_2 = open("./REFERENCES/template_2.html", 'r')
+	output.write(template_2.read())	
+	template_2.close
+	output.close
 
 # ========================================================================
 # MAIN 
 # ========================================================================
 
 def main() -> None:
-	# create_csv_template()
-	# create_csv_k_map_()
+	# create_csv_template(table_inputs=4, table_outputs=7)
+	create_csv_k_map_()
 	display_kmap()
 
 if __name__ == '__main__':
