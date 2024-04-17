@@ -9,9 +9,9 @@
 
 def main():
 	
-	file_path_1 = "keyword.txt"
-	file_path_2 = "exclusion_list.txt"
-	file_path_3 = "formatted_search.txt"
+	file_path_1 = rf".\keyword.txt"
+	file_path_2 = rf".\exclusion_list.txt"
+	file_path_3 = rf".\formatted_search.txt"
 	
 	final_string = ""
 
