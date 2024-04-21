@@ -65,8 +65,8 @@ def create_csv_k_map_(file_path: str = "./REFERENCES/test.csv") -> None:
 	for column in range(num_columns - num_columns_output, num_columns):
 		smol_table = smol_table_template.copy()
 		for row in range(0, pow(2, num_columns_input)):
-			if big_table.iloc[row, column] == 1:
-				smol_table.iloc[ma.floor(row/smol_table_length), row%smol_table_length] = 1
+			if big_table.iloc[row, column] != 0:
+				smol_table.iloc[ma.floor(row/smol_table_length), row%smol_table_length] = big_table.iloc[row, column]
 		
 		# swaping columns part
 		if smol_table_length > 2:
