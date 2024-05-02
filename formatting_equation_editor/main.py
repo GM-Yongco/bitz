@@ -18,7 +18,7 @@ def main():
 	input_equation = input_equation.replace("D", "Z")
 
 	print(input_equation)
-	file.close
+	file.close()
 
 	file = open(file_name, "w")
 	file.write(input_equation)

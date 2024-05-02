@@ -117,9 +117,9 @@ def display_kmap(file_path: str = "./REFERENCES/test.csv") -> None:
 # ========================================================================
 
 def main() -> None:
-	# create_csv_template(table_inputs=4, table_outputs=7)
-	create_csv_k_map_()
-	display_kmap()
+	create_csv_template(table_inputs=3, table_outputs=2)
+	# create_csv_k_map_()
+	# display_kmap()
 
 if __name__ == '__main__':
 	section("START")

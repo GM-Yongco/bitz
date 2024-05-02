@@ -1,2 +1,5 @@
 Area51.py
 *.exe
+
+output*.txt
+output*.csv
