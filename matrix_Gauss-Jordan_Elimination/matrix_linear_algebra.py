@@ -39,7 +39,7 @@ def minimal_print_df(
 # ========================================================================
 
 def row_swap(		
-		x:pd.core.frame.DataFrame,
+		x:pd.DataFrame,
 		row_1:int = 1,
 		row_2:int = 1
 		) -> None:
@@ -54,7 +54,7 @@ def row_swap(
 	# no return val cuz df are like pointers
 
 def row_add(
-		x:pd.core.frame.DataFrame,
+		x:pd.DataFrame,
 		row_1:int = 1,
 		row_2:int = 1,
 		row_1_multiple:int = 1,
@@ -67,7 +67,7 @@ def row_add(
 	row_2 = row_2 - 1
 	# because math starts with 1 ;^;
 		
-	temp_row_2:pandas.core.series.Series = x.iloc[row_2] * row_2_multiple
+	temp_row_2:pd.Series = x.iloc[row_2] * row_2_multiple
 	
 	x.iloc[row_1] = x.iloc[row_1] * row_1_multiple
 	if is_add:
@@ -90,7 +90,7 @@ def row_add(
 	minimal_print_df(df)
 
 def row_multiply(
-		x:pd.core.frame.DataFrame, 
+		x:pd.DataFrame, 
 		row:int = 1, 
 		row_multiple: int = 1,
 		is_multiply:bool = True
