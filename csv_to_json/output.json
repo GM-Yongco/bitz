@@ -1,0 +1,272 @@
+[
+  {
+    "question": "What is the capital of Afghanistan",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Kabul",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Albania",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Tirana",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Algeria",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Algiers",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Andorra",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Andorra la Vella",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Angola",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Luanda",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Antigua and Barbuda",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "St. John's",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Argentina",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Buenos Aires",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Armenia",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Yerevan",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Australia",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Canberra/Sydney",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Austria",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Vienna",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Azerbaijan",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Baku",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Bahamas",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Nassau",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Bahrain",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Manama",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Bangladesh",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Dhaka",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Barbados",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Bridgetown",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Belarus",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Minsk",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Belgium",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Brussels",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Belize",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Belmopan",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Benin",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Porto-Novo",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Bhutan",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Thimphu",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Bolivia",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "La Paz & Sucre",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Bosnia and Herzegovina",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Sarajevo",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Botswana",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Gaborone",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Brazil",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Bras\u00edlia",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Brunei",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Bujumbura",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Bulgaria",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Sofia",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Burkina Faso",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Ouagadougou",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Burundi",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Bujumbura, Gitega",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Cambodia",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Phnom Penh",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Cameroon",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Yaound\u00e9",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Canada",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Ottawa",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Cape Verde",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Praia",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Central African Republic",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Bangui",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Chad",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "N'Djamena",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Chile",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Santiago",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of China",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Beijing",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Colombia",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Bogot\u00e1",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Comoros",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Moroni",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Costa Rica",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "San Jos\u00e9",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Croatia",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Zagreb",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Cuba",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Havana",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Cyprus",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Nicosia",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Czech Republic",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Prague",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Democratic Republic of the Congo",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Kinshasa",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  },
+  {
+    "question": "What is the capital of Denmark",
+    "qImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s",
+    "answer": "Copenhagen",
+    "aImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtcQAqZPsyJ8jKKBklMIFCdS37W6fiSRBgQ&s"
+  }
+]
