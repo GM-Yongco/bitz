@@ -5,3 +5,7 @@ output*.txt
 output*.csv
 
 test.py
+bot_info.json
+
+temp.txt
+temp.json
