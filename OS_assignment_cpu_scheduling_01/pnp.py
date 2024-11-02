@@ -1,7 +1,7 @@
 # Author				: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
 # Date					: ur my date uwu
 # Description			: Code that will impress u ;)
-# Actual Description	: shortest job first cpu scheduling algorithm
+# Actual Description	: priority non-preemptive cpu scheduling algorithm
 # HEADERS ================================================================
 
 from helper import *
