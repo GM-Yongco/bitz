@@ -10,7 +10,7 @@ class ShortestJobFirstCPU(CPU):
 	def simulation(self):
 
 		# how may time slots each process gets each round
-		BURST_ALLOCATION:int = 2 
+		BURST_ALLOCATION:int = 3
 
 		self.all_processes = sorted(
 			self.all_processes, 
@@ -18,44 +18,73 @@ class ShortestJobFirstCPU(CPU):
 		)
 	
 		time:int = 0
-		all_processes_is_done:bool = False
+		
 		queue_processes:list = []
+		current_process_index:int = 0
+		removed_from_queue:bool = False
+		shared_time_left:int = BURST_ALLOCATION
+		
+		all_processes_is_done:bool = False
+		time_frame_is_available:bool = True
 		
 		while(all_processes_is_done == False):	
 
 			all_processes_is_done = True
-			time_frame_is_available:bool = True
+			time_frame_is_available = True
 			
-			# itterate through all the processes to find one to use a time slot
+			# itterate through all the processes to see if the processes arent done yet
+			# and to find one to maybe add to the process_queue
 			for process in self.all_processes:
 				if process.burst_completed < process.BURST:
 					# if at least one process is not done... 
 					all_processes_is_done = False
 					
+					# if process already arrived and is not in the queue process
+					if not(process in queue_processes) and process.ARRIVAL <= time:
+						queue_processes.append(process)
+			
+			# update the processes in queue_processes
+			for process in queue_processes:
+				process.time_turn_around += 1
+				self.total_time_turn_around += 1
+				if (process == queue_processes[current_process_index]):
+					shared_time_left -= 1
+					self.time_frames += str(process.ID) + '|'
+					process.burst_completed += 1
+					time_frame_is_available = False
 					
-					if process.ARRIVAL <= time:
-						for i in range(BURST_ALLOCATION):	
-							process.time_turn_around += 1
-							self.total_time_turn_around += 1
-							
-							if time_frame_is_available:					
-								self.time_frames += str(process.ID) + '|'
-								process.burst_completed += 1
-								time_frame_is_available = False
-								
-								if process.burst_completed == process.BURST:
-									process.time_complete = time
-								elif process.burst_completed == 1:
-									process.time_start = time
-							else:
-								process.time_idle += 1
-								self.total_time_idle +=1
+					if process.burst_completed >= process.BURST:
+						process.time_complete = time
+						shared_time_left = 0
+					elif process.burst_completed == 1:
+						process.time_start = time
+				else:
+					process.time_idle += 1
+					self.total_time_idle +=1
+			
+			
 
 			# if time slot is still available after itterating through all the processes
 			# and theres still a process not done			
-			if (not queue_processes) and (all_processes_is_done == False):
+			if time_frame_is_available and (all_processes_is_done == False):
 				self.time_frames += '=|'
 	
+			#update for next itteration
+			
+			#removed for queue process when finished
+			
+			if shared_time_left <= 0:
+				if queue_processes[current_process_index].burst_completed >= queue_processes[current_process_index].BURST:
+					queue_processes.remove(queue_processes[current_process_index])
+				else:
+					current_process_index += 1
+					
+				if len(queue_processes):
+					current_process_index %= len(queue_processes)
+				else:
+					current_process_index = 0
+					
+				shared_time_left = BURST_ALLOCATION
 			time += 1
 			
 # ========================================================================
