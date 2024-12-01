@@ -1,63 +1,44 @@
 # Author				: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
 # Date					: ur my date uwu
 # Description			: Code that will impress u ;)
-# Actual Description	: shortest job first cpu scheduling algorithm
+# Actual Description	: lest recently used algorithm
 # HEADERS ================================================================
 
 from helper import *
 
-class ShortestJobFirstCPU(CPU):
+class LRU_CPU(CPU):
 	def simulation(self):
-	
-		time:int = 0
-		all_processes_is_done:bool = False
-		while(all_processes_is_done == False):	
+		current_pages:List[int] = []
+		for i in range(0, self.page_slots):
+			current_pages.append(-1)			# -1 is a sentinel value
 
-			# constantly re order the list based on how much cpu time a process needs left
-			# sort by arrival time then secondarily sort by process ID
-			self.all_processes = sorted(
-				self.all_processes, 
-				key=lambda x: x.ID
-			)
-			self.all_processes = sorted(
-				self.all_processes, 
-				key=lambda x: x.BURST - x.burst_completed
-			)
-			
-			# pick the process to do at this time slot
-			all_processes_is_done = True
-			time_frame_is_available:bool = True
-			
-			# itterate through all the processes to find one to use a time slot
-			for process in self.all_processes:
-				if process.burst_completed < process.BURST:
-					
-					# if at least one process is not done... 
-					all_processes_is_done = False
-					
-					if process.ARRIVAL <= time:
-						process.time_turn_around += 1
-						self.total_time_turn_around += 1
-						
-						if time_frame_is_available:					
-							self.time_frames += str(process.ID) + '|'
-							process.burst_completed += 1
-							time_frame_is_available = False
-							
-							if process.burst_completed == process.BURST:
-								process.time_complete = time
-							elif process.burst_completed == 1:
-								process.time_start = time
-						else:
-							process.time_idle += 1
-							self.total_time_idle +=1
-
-			# if time slot is still available after itterating through all the processes
-			# and theres still a process not done			
-			if (time_frame_is_available) and (all_processes_is_done == False):
-				self.time_frames += '=|'
+		output:str = f"{'page_queue':12}"
+		print(output)
 	
-			time += 1
+		for i, new_page in enumerate(self.page_queue):
+			if len(current_pages) < self.page_slots:
+				current_pages.append(new_page)
+			elif new_page not in current_pages: 
+
+				# then we find the distance to next itteration of the page of everythig in the current pages list
+				index_to_replace:int = 0
+				page_distance_of_index:int = 0
+				for j, page in enumerate(current_pages):
+					if page in self.page_queue[i+1:]:
+						if self.page_queue[i+1:].index(page) > page_distance_of_index:
+							page_distance_of_index = self.page_queue[i+1:].index(page)
+							index_to_replace = j
+					else:
+						index_to_replace = j
+						break
+				current_pages[index_to_replace] = new_page
+
+			output = f"{new_page:5}"
+			for current_page in current_pages:
+				output += f"|{current_page:5}" 
+
+			print(output)
+		
 			
 # ========================================================================
 # MAIN 
@@ -66,9 +47,8 @@ class ShortestJobFirstCPU(CPU):
 if __name__ == '__main__':
 	section("START")
 	
-	see_pee_you:ShortestJobFirstCPU = ShortestJobFirstCPU()
-	see_pee_you.get_processes()
-	see_pee_you.simulation()
-	see_pee_you.output()
+	test_cpu:LRU_CPU = LRU_CPU()
+	test_cpu.json_to_details()
+	test_cpu.simulation()
 
 	section("END")

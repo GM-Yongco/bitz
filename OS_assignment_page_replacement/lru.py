@@ -1,91 +1,41 @@
 # Author				: G.M. Yongco #BeSomeoneWhoCanStandByShinomiya
 # Date					: ur my date uwu
 # Description			: Code that will impress u ;)
-# Actual Description	: round_robin cpu scheduling algorithm
+# Actual Description	: lest recently used algorithm
 # HEADERS ================================================================
 
 from helper import *
 
-class ShortestJobFirstCPU(CPU):
+class LRU_CPU(CPU):
 	def simulation(self):
+		current_pages:List[int] = []
+		index_recency_list:List[int] = []
+		for i in range(0, self.page_slots):
+			current_pages.append(-1)			# -1 is a sentinel value
+			index_recency_list.append(0)
 
-		# how may time slots each process gets each round
-		BURST_ALLOCATION:int = 3
-
-		self.all_processes = sorted(
-			self.all_processes, 
-			key=lambda x: x.ID
-		)
+		output:str = f"{'page_queue':12}"
+		print(output)
 	
-		time:int = 0
-		
-		queue_processes:list = []
-		current_process_index:int = 0
-		removed_from_queue:bool = False
-		shared_time_left:int = BURST_ALLOCATION
-		
-		all_processes_is_done:bool = False
-		time_frame_is_available:bool = True
-		
-		while(all_processes_is_done == False):	
+		for new_page in self.page_queue:
+			max_value = max(index_recency_list)		# its been in the list the longes without being updated
+			LRU_index = index_recency_list.index(max_value)
 
-			all_processes_is_done = True
-			time_frame_is_available = True
-			
-			# itterate through all the processes to see if the processes arent done yet
-			# and to find one to maybe add to the process_queue
-			for process in self.all_processes:
-				if process.burst_completed < process.BURST:
-					# if at least one process is not done... 
-					all_processes_is_done = False
-					
-					# if process already arrived and is not in the queue process
-					if not(process in queue_processes) and process.ARRIVAL <= time:
-						queue_processes.append(process)
-			
-			# update the processes in queue_processes
-			for process in queue_processes:
-				process.time_turn_around += 1
-				self.total_time_turn_around += 1
-				if (process == queue_processes[current_process_index]):
-					shared_time_left -= 1
-					self.time_frames += str(process.ID) + '|'
-					process.burst_completed += 1
-					time_frame_is_available = False
-					
-					if process.burst_completed >= process.BURST:
-						process.time_complete = time
-						shared_time_left = 0
-					elif process.burst_completed == 1:
-						process.time_start = time
-				else:
-					process.time_idle += 1
-					self.total_time_idle +=1
-			
-			
+			if new_page not in current_pages:
+				current_pages[LRU_index] = new_page
+			else:
+				LRU_index = current_pages.index(new_page)
+				
+			for i in range(0, len(index_recency_list)):
+				index_recency_list[i] += 1
+			index_recency_list[LRU_index] = 0
 
-			# if time slot is still available after itterating through all the processes
-			# and theres still a process not done			
-			if time_frame_is_available and (all_processes_is_done == False):
-				self.time_frames += '=|'
-	
-			#update for next itteration
-			
-			#removed for queue process when finished
-			
-			if shared_time_left <= 0:
-				if queue_processes[current_process_index].burst_completed >= queue_processes[current_process_index].BURST:
-					queue_processes.remove(queue_processes[current_process_index])
-				else:
-					current_process_index += 1
-					
-				if len(queue_processes):
-					current_process_index %= len(queue_processes)
-				else:
-					current_process_index = 0
-					
-				shared_time_left = BURST_ALLOCATION
-			time += 1
+			output = f"{new_page:5}"
+			for current_page in current_pages:
+				output += f"|{current_page:5}" 
+
+			print(output)
+		
 			
 # ========================================================================
 # MAIN 
@@ -94,9 +44,8 @@ class ShortestJobFirstCPU(CPU):
 if __name__ == '__main__':
 	section("START")
 	
-	see_pee_you:ShortestJobFirstCPU = ShortestJobFirstCPU()
-	see_pee_you.get_processes()
-	see_pee_you.simulation()
-	see_pee_you.output()
+	test_cpu:LRU_CPU = LRU_CPU()
+	test_cpu.json_to_details()
+	test_cpu.simulation()
 
 	section("END")
