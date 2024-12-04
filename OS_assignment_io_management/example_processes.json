@@ -1,4 +1,8 @@
 {
-	"page_queue" : [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1],
-	"page_slots" : 3
+	"position_queue" : [46, 56, 276, 48, 236,338, 112],
+	"position_previous": 68,
+	"position_current": 256,
+	"track_size" : 400,
+	"seek_rate" : 5,
+	"alpha_value" : 20
 }
