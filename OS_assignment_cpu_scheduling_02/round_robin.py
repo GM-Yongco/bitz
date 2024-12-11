@@ -6,7 +6,7 @@
 
 from helper import *
 
-class ShortestJobFirstCPU(CPU):
+class RoundRobin(CPU):
 	def simulation(self):
 
 		# how may time slots each process gets each round
@@ -54,7 +54,7 @@ class ShortestJobFirstCPU(CPU):
 					time_frame_is_available = False
 					
 					if process.burst_completed >= process.BURST:
-						process.time_complete = time
+						process.time_complete = time + 1
 						shared_time_left = 0
 					elif process.burst_completed == 1:
 						process.time_start = time
@@ -94,7 +94,7 @@ class ShortestJobFirstCPU(CPU):
 if __name__ == '__main__':
 	section("START")
 	
-	see_pee_you:ShortestJobFirstCPU = ShortestJobFirstCPU()
+	see_pee_you:RoundRobin = RoundRobin()
 	see_pee_you.get_processes()
 	see_pee_you.simulation()
 	see_pee_you.output()

@@ -1,26 +1,32 @@
 {
     "processes" : [
         {
-            "id":1,
-            "time_arrival": 1,
+            "id" : 1,
+            "time_arrival": 0,
             "time_burst": 8,
             "priority": 2
         },
         {
-            "id":2,
-            "time_arrival": 3,
-            "time_burst": 6,
-            "priority": 3
-        },
-        {
-            "id":3,
+            "id" : 2,
             "time_arrival": 3,
             "time_burst": 4,
-            "priority": 1
+            "priority": 2
         },
         {
-            "id":4,
-            "time_arrival": 7,
+            "id" : 3,
+            "time_arrival": 4,
+            "time_burst": 5,
+            "priority": 2
+        },
+        {
+            "id" : 4,
+            "time_arrival": 6,
+            "time_burst": 3,
+            "priority": 5
+        },
+        {
+            "id" : 5,
+            "time_arrival": 10,
             "time_burst": 2,
             "priority": 1
         }

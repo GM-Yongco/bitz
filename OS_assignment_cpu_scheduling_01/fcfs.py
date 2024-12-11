@@ -40,7 +40,7 @@ class FirstComeFirstServedCPU(CPU):
 			time += current_process.BURST
 			
 			current_process.time_complete = time
-			current_process.time_turn_around = current_process.time_complete - current_process.time_start 
+			current_process.time_turn_around = current_process.time_complete - current_process.ARRIVAL 
 			
 			self.total_time_idle += current_process.time_idle
 			self.total_time_turn_around += current_process.time_turn_around

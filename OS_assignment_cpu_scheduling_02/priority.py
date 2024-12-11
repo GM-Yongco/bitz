@@ -50,7 +50,7 @@ class PriorityPreemptiveCPU(CPU):
 							time_frame_is_available = False
 							
 							if process.burst_completed == process.BURST:
-								process.time_complete = time
+								process.time_complete = time + 1
 							elif process.burst_completed == 1:
 								process.time_start = time
 						else:
