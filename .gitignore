@@ -9,3 +9,7 @@ test.py
 bot_info.json
 
 temp.*
+
+log_*
+log.*
+*log.csv
