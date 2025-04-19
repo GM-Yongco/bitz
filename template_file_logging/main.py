@@ -41,8 +41,8 @@ def log_write(
 		f"{time_now.hour:02}", 
 		f"{time_now.minute:02}", 
 		f"{time_now.second:02}",
-		str(category.replace(",", "<comma>")),
-		str(details.replace(",", "<comma>"))
+		str(category.replace(",", "-").replace("\n", "|")),
+		str(details.replace(",", "-").replace("\n", "|"))
 	]
 
 	with open(file_name, "a", newline="") as log_file:
