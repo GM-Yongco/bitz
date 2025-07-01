@@ -38,7 +38,7 @@
     });
     
     holdBtn.addEventListener("touchstart", (e) => {
-      e.preventDefault();
+      e.preventDefault(); // prevents highlighting of the text in the button
       if (intervalId === null) {
         intervalId = setInterval(updateTimer, INCREMENT);
       }
