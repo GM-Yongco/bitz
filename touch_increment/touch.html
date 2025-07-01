@@ -9,6 +9,8 @@
     button { font-size: 24px; padding: 20px; }
   </style>
 </head>
+
+
 <body>
   <div id="timer">0</div>
   <button id="holdBtn">Hold to Increment</button>
@@ -26,7 +28,7 @@
 
     holdBtn.addEventListener("mousedown", () => {
       if (intervalId === null) {
-        intervalId = setInterval(updateTimer, 100); // increment every 100ms
+        intervalId = setInterval(updateTimer, 10000); // increment every 100ms
       }
     });
 
