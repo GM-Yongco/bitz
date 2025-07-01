@@ -38,6 +38,7 @@
     });
     
     holdBtn.addEventListener("touchstart", (e) => {
+      e.preventDefault();
       if (intervalId === null) {
         intervalId = setInterval(updateTimer, INCREMENT);
       }
