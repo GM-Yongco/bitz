@@ -12,8 +12,71 @@
 
 
 <body>
-  <div id="timer">0</div>
-  <button id="holdBtn">Hold to Increment</button>
+  
+  
+  
+  <button 
+  onfocus="this.style.outline='none'"
+  style="
+  width: 80vw;
+  height: 40vh;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding:auto;
+  margin:auto;
+
+  outline: none;
+  box-shadow: none;
+  border:none;
+  background-color: rgba(128, 255, 128, 1);
+  "
+  id="holdBtn"
+  >HOLD</button>
+  
+  <div style="
+  width: 80vw;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding:auto;
+  margin:auto;
+
+  "
+  id="timer">0</div>
+
+  <button 
+  onfocus="this.style.outline='none'"
+  style="
+  width: 80vw;
+  height: 40vh;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding:auto;
+  margin:auto;
+
+  outline: none;
+  box-shadow: none;
+  border:none;
+  background-color: rgba(255, 128, 128, 1);
+  "
+  id="reset"
+  onclick="reset()"
+  >RESET</button>
 
   <script>
     let count = 0;
@@ -23,6 +86,15 @@
 
     function updateTimer() {
       count = (Math.round((count+0.1) * 10))/10;
+      timerDisplay.textContent = count;
+    }
+
+    // ==============================
+    // RESET TIMERS
+    // ==============================
+  
+    function reset() {
+      count = 0;
       timerDisplay.textContent = count;
     }
 
@@ -47,7 +119,6 @@
     // ==============================
     // STOP TIMERS
     // ==============================
-
     holdBtn.addEventListener("mouseup", () => {
       clearInterval(intervalId);
       intervalId = null;
