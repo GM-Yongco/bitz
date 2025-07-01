@@ -22,15 +22,30 @@
     const holdBtn = document.getElementById("holdBtn");
 
     function updateTimer() {
-      count++;
+      count = (Math.round((count+0.1) * 10))/10;
       timerDisplay.textContent = count;
     }
 
+    // ==============================
+    // START TIMERS
+    // ==============================
+    const INCREMENT = 100 // 100ms
+
     holdBtn.addEventListener("mousedown", () => {
       if (intervalId === null) {
-        intervalId = setInterval(updateTimer, 10000); // increment every 100ms
+        intervalId = setInterval(updateTimer, INCREMENT);
       }
     });
+    
+    holdBtn.addEventListener("touchstart", (e) => {
+      if (intervalId === null) {
+        intervalId = setInterval(updateTimer, INCREMENT);
+      }
+    });
+
+    // ==============================
+    // STOP TIMERS
+    // ==============================
 
     holdBtn.addEventListener("mouseup", () => {
       clearInterval(intervalId);
@@ -42,18 +57,11 @@
       intervalId = null;
     });
 
-    // For mobile touch support
-    holdBtn.addEventListener("touchstart", (e) => {
-      e.preventDefault();
-      if (intervalId === null) {
-        intervalId = setInterval(updateTimer, 100);
-      }
-    });
-
     holdBtn.addEventListener("touchend", () => {
       clearInterval(intervalId);
       intervalId = null;
     });
+
   </script>
 </body>
 </html>
