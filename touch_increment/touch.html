@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hold Timer</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    #timer { font-size: 48px; margin: 20px; }
+    button { font-size: 24px; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div id="timer">0</div>
+  <button id="holdBtn">Hold to Increment</button>
+
+  <script>
+    let count = 0;
+    let intervalId = null;
+    const timerDisplay = document.getElementById("timer");
+    const holdBtn = document.getElementById("holdBtn");
+
+    function updateTimer() {
+      count++;
+      timerDisplay.textContent = count;
+    }
+
+    holdBtn.addEventListener("mousedown", () => {
+      if (intervalId === null) {
+        intervalId = setInterval(updateTimer, 100); // increment every 100ms
+      }
+    });
+
+    holdBtn.addEventListener("mouseup", () => {
+      clearInterval(intervalId);
+      intervalId = null;
+    });
+
+    holdBtn.addEventListener("mouseleave", () => {
+      clearInterval(intervalId);
+      intervalId = null;
+    });
+
+    // For mobile touch support
+    holdBtn.addEventListener("touchstart", (e) => {
+      e.preventDefault();
+      if (intervalId === null) {
+        intervalId = setInterval(updateTimer, 100);
+      }
+    });
+
+    holdBtn.addEventListener("touchend", () => {
+      clearInterval(intervalId);
+      intervalId = null;
+    });
+  </script>
+</body>
+</html>
